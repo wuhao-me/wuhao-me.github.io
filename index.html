@@ -67,6 +67,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/png" href="images/icon.png">
 
+<!-- Academic typography: web-loaded fonts for consistent rendering across devices -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
 <style>
 :root{--bg:#f7f9fc;--card:rgba(255,255,255,.88);--text:#172033;--muted:#667085;--line:#e8edf5;--accent:#1769e0;--accent2:#0f9f8f;--shadow:0 16px 45px rgba(25,45,80,.08);--radius:18px;--max:1040px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0!important;background:radial-gradient(circle at 15% 0%,#eaf2ff 0,transparent 30%),radial-gradient(circle at 90% 8%,#eafaf6 0,transparent 25%),var(--bg);color:var(--text);font-family:"Linux Libertine","Libertinus Serif","Times New Roman",Times,"Noto Serif CJK SC","Songti SC",serif;line-height:1.68;font-size:16px}
@@ -83,6 +88,15 @@ body>table[width="100%"] tr{transition:.2s}body>table[width="100%"] tr:hover{bac
 body>table:nth-last-of-type(3) li,body>table:nth-last-of-type(2) li{padding:5px 0}
 #site-nav{position:fixed;z-index:999;top:0;left:0;right:0;height:58px;background:rgba(247,249,252,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,226,235,.75)}#site-nav .nav-inner{width:min(92%,var(--max));height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;color:#172033!important;letter-spacing:-.2px}.nav-links{display:flex;gap:22px}.nav-links a{font-size:14px;font-weight:600;color:#667085}.nav-links a:hover{color:var(--accent)}
 #backtop{position:fixed;right:24px;bottom:24px;width:42px;height:42px;border:0;border-radius:50%;background:#172033;color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.16);cursor:pointer;opacity:0;pointer-events:none;transition:.2s;z-index:999}#backtop.show{opacity:1;pointer-events:auto}#backtop:hover{transform:translateY(-2px)}
+/* Refined academic typography */
+name{font-family:"Source Serif 4","Noto Serif SC",Georgia,serif!important;font-weight:600!important;letter-spacing:-.7px!important}
+heading{font-family:"Source Serif 4","Noto Serif SC",Georgia,serif!important;font-weight:600!important;letter-spacing:-.2px!important}
+papertitle,.paper-link{font-family:"Source Serif 4","Noto Serif SC",Georgia,serif!important;font-weight:600!important}
+intro, p, li, td{font-family:"Source Serif 4","Noto Serif SC","Songti SC",Georgia,serif}
+#site-nav,.brand,.nav-links a,body>table:first-of-type p[style*="text-align:center"] a,#backtop{font-family:"Source Serif 4","Noto Serif SC",Georgia,serif}
+.brand{font-weight:600!important}.nav-links a{font-weight:600!important}
+strong{font-weight:600!important}
+body>table:nth-of-type(3) li{line-height:1.62}
 @media(max-width:720px){body:before{height:62px}#site-nav{height:54px}.nav-links{gap:11px}.nav-links a:nth-child(3),.nav-links a:nth-child(4){display:none}body>table{width:94%!important;padding:8px 15px!important;border-radius:15px}body>table:first-of-type{padding:20px 18px!important}body>table:first-of-type tr{display:flex;flex-direction:column-reverse}body>table:first-of-type td{width:100%!important;max-width:100%!important;display:block}body>table:first-of-type td img{max-width:145px!important;margin-bottom:16px!important}name{font-size:31px!important}heading{font-size:21px!important}body>table[width="100%"] td:first-child{width:27%!important;padding-left:6px!important;padding-right:12px!important}body>table[width="100%"] img{max-width:78px!important}.nav-inner{width:92%!important}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
