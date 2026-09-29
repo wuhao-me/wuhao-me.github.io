@@ -66,6 +66,32 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/png" href="images/icon.png">
+
+<style>
+:root{--bg:#f7f9fc;--card:rgba(255,255,255,.88);--text:#172033;--muted:#667085;--line:#e8edf5;--accent:#1769e0;--accent2:#0f9f8f;--shadow:0 16px 45px rgba(25,45,80,.08);--radius:18px;--max:1040px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0!important;background:radial-gradient(circle at 15% 0%,#eaf2ff 0,transparent 30%),radial-gradient(circle at 90% 8%,#eafaf6 0,transparent 25%),var(--bg);color:var(--text);font-family:"Linux Libertine","Libertinus Serif","Times New Roman",Times,"Noto Serif CJK SC","Songti SC",serif;line-height:1.68;font-size:16px}
+body:before{content:"";display:block;height:70px}a{color:var(--accent);text-decoration:none;transition:.2s}a:hover{color:#0c4fad}strong{font-weight:680}p{color:#344054}li{margin:7px 0;color:#344054}hr{border:0;border-top:1px solid var(--line);margin-top:38px}
+body>table{width:min(92%,var(--max))!important;max-width:var(--max)!important;margin:0 auto 18px!important;background:var(--card);border:1px solid rgba(224,230,239,.9)!important;border-radius:var(--radius);box-shadow:var(--shadow);padding:10px 24px!important;overflow:hidden}
+body>table:first-of-type{padding:30px 34px!important;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(248,251,255,.92));margin-bottom:24px!important}
+body>table:first-of-type table{width:100%!important}body>table:first-of-type td{border:0!important}
+name{font-size:40px!important;line-height:1.08;font-weight:700;letter-spacing:-.6px;color:#111827;display:inline-block;margin-bottom:12px}intro{font-size:15.5px;color:#475467}heading{display:block!important;font-size:25px!important;font-weight:700!important;letter-spacing:-.15px;color:#111827;margin:12px 0 14px!important;position:relative;padding-left:14px}heading:before{content:"";position:absolute;left:0;top:7px;width:4px;height:22px;border-radius:9px;background:linear-gradient(var(--accent),var(--accent2))}papertitle{font-size:17px!important;font-weight:700;color:#172033;line-height:1.4}d{color:inherit}
+img{max-width:100%;height:auto}.hoverZoomLink{border-radius:22px!important;box-shadow:0 15px 35px rgba(24,42,75,.16);transition:.28s transform,.28s box-shadow}.hoverZoomLink:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 20px 45px rgba(24,42,75,.22)}
+body>table:first-of-type p[style*="text-align:center"] a{display:inline-block;margin:4px 2px;padding:7px 10px;border-radius:9px;background:#f1f5fb;font-weight:600;font-size:13px;color:#344054}body>table:first-of-type p[style*="text-align:center"] a:hover{background:#e5efff;color:var(--accent);transform:translateY(-1px)}
+body>table:nth-of-type(2) li{list-style:none;padding:8px 0 8px 16px;margin:0;border-bottom:1px dashed #edf0f5;position:relative}body>table:nth-of-type(2) li:last-child{border-bottom:0}body>table:nth-of-type(2) li:before{content:"";position:absolute;left:0;top:17px;width:6px;height:6px;border-radius:50%;background:var(--accent2)}
+body>table:nth-of-type(3) li{list-style:none;padding:13px 14px;margin:7px 0;background:#fbfcfe;border:1px solid #edf1f6;border-radius:12px;transition:.2s}body>table:nth-of-type(3) li:hover{transform:translateX(3px);border-color:#d9e5f7;background:#fff;box-shadow:0 8px 24px rgba(30,60,100,.05)}
+body>table[width="100%"] tr{transition:.2s}body>table[width="100%"] tr:hover{background:#fbfcff}body>table[width="100%"] td{padding-top:14px!important;padding-bottom:14px!important;border-bottom:1px solid #edf0f5}body>table[width="100%"] tr:last-child td{border-bottom:0}body>table[width="100%"] img{object-fit:contain;max-height:66px;border-radius:8px}
+body>table:nth-last-of-type(3) li,body>table:nth-last-of-type(2) li{padding:5px 0}
+#site-nav{position:fixed;z-index:999;top:0;left:0;right:0;height:58px;background:rgba(247,249,252,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(220,226,235,.75)}#site-nav .nav-inner{width:min(92%,var(--max));height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;color:#172033!important;letter-spacing:-.2px}.nav-links{display:flex;gap:22px}.nav-links a{font-size:14px;font-weight:600;color:#667085}.nav-links a:hover{color:var(--accent)}
+#backtop{position:fixed;right:24px;bottom:24px;width:42px;height:42px;border:0;border-radius:50%;background:#172033;color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.16);cursor:pointer;opacity:0;pointer-events:none;transition:.2s;z-index:999}#backtop.show{opacity:1;pointer-events:auto}#backtop:hover{transform:translateY(-2px)}
+@media(max-width:720px){body:before{height:62px}#site-nav{height:54px}.nav-links{gap:11px}.nav-links a:nth-child(3),.nav-links a:nth-child(4){display:none}body>table{width:94%!important;padding:8px 15px!important;border-radius:15px}body>table:first-of-type{padding:20px 18px!important}body>table:first-of-type tr{display:flex;flex-direction:column-reverse}body>table:first-of-type td{width:100%!important;max-width:100%!important;display:block}body>table:first-of-type td img{max-width:145px!important;margin-bottom:16px!important}name{font-size:31px!important}heading{font-size:21px!important}body>table[width="100%"] td:first-child{width:27%!important;padding-left:6px!important;padding-right:12px!important}body>table[width="100%"] img{max-width:78px!important}.nav-inner{width:92%!important}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+  /* Publication title links */
+  a.paper-link { color: inherit; font-weight: 650; text-decoration: none; border-bottom: 1px solid rgba(37,99,235,.28); transition: color .18s ease, border-color .18s ease; }
+  a.paper-link:hover { color: #2563eb; border-bottom-color: #2563eb; }
+  a.paper-link::after { content: " ↗"; font-size: .78em; font-weight: 500; opacity: .55; }
+</style>
+
 </head>
 
 <!-- bib hide -->
@@ -82,6 +108,9 @@
 
 <!-- body -->
 <body>
+<nav id="site-nav"><div class="nav-inner"><a class="brand" href="#top">Hao Wu · 吴浩</a><div class="nav-links"><a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#awards">Awards</a></div></div></nav>
+<div id="top"></div>
+
   <!-- self-intro -->
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -122,6 +151,7 @@
     </tr>
   </tbody></table>
 
+  <div id="news"></div>
   <!-- News -->
   <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
@@ -147,6 +177,7 @@
   </tr>
   </tbody></table>
 	
+  <div id="publications"></div>
   <!-- -Publications -->
   <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
@@ -155,17 +186,17 @@
     <br>
     <td style="padding:0px;width:100%;vertical-align:middle">
     <p>
-	<li>[1] Haotian Guo*, <strong>Hao Wu*</strong>, Yanzhe Wang*, Yaoting Xue, Tuck-Whye Wong, Tiefeng Li, and Huixu Dong†. Enabling Tunable Stiffness, Adhesive Grasping, and Interaction-driven Reconfiguration: A Shape-Memory-Polymer-Enhanced Fin-ray Gripper. Soft Robotics, 2025, Accepted.</li>
-    <li>[2] Yanzhe Wang*, Haotian Guo*, <strong>Hao Wu*</strong>, and Huixu Dong†, FlexiRay: Breaking Planar Limits by Harnessing Large Deformations for Flexible, Full-Coverage, Human-like Multimodal Haptic Perception. Nature Communications, 2025, Accepted.</li>
-    <li>[3] Yanzhe Wang, Wei Yu, <strong>Hao Wu</strong>, Haotian Guo, Huixu Dong†. SA-DEM: Dexterous Extrinsic Robotic Manipulation of Non-Graspable Objects via Stiffness-Aware Dual-Stage Reinforcement Learning. IEEE Transactions on Automation Science and Engineering, 2025, Accepted.</li>   
-	<li>[4] Yanzhe Wang*, <strong>Hao Wu*</strong>, Ziyi Zheng, and Huixu Dong†. Relaxation-Aware Multimodal Sensing of Soft Gripper Driven by Structure-Perception-Learning. Robotics: Science and Systems, 2026, Oral, Accepted.</li>
-	<li>[5] Ziyi Zheng, Keqi Zhu, <strong>Hao Wu</strong>, Yanzhe Wang, and Huixu Dong†. Active Surface-Driven Reconfigurable Gripper: Robust Grasping and Sequential Manipulation of Thin Objects. Robotics: Science and Systems, 2026, Oral, Accepted.</li>   
-	<li>[6] Huang Junda, Honghao Guo, <strong>Hao Wu</strong>, Yitong Li, Zhengyang Liu, Marcelo H Ang Jr, Jianshu Zhou†. HandCept: A Visual-Inertial Fusion Framework for Accurate Proprioception in Dexterous Hands. ICCA, 2026, Oral, Accepted</li>
+	<li>[1] Haotian Guo*, <strong>Hao Wu*</strong>, Yanzhe Wang*, Yaoting Xue, Tuck-Whye Wong, Tiefeng Li, and Huixu Dong†. <a class="paper-link" href="https://journals.sagepub.com/doi/10.1177/21695172251381461" target="_blank" rel="noopener noreferrer">Enabling Tunable Stiffness, Adhesive Grasping, and Interaction-driven Reconfiguration: A Shape-Memory-Polymer-Enhanced Fin-ray Gripper</a>. Soft Robotics, 2025, Accepted.</li>
+    <li>[2] Yanzhe Wang*, Haotian Guo*, <strong>Hao Wu*</strong>, and Huixu Dong†, <a class="paper-link" href="https://www.nature.com/articles/s41467-025-67148-y" target="_blank" rel="noopener noreferrer">FlexiRay: Breaking Planar Limits by Harnessing Large Deformations for Flexible, Full-Coverage, Human-like Multimodal Haptic Perception</a>. Nature Communications, 2025, Accepted.</li>
+    <li>[3] Yanzhe Wang, Wei Yu, <strong>Hao Wu</strong>, Haotian Guo, Huixu Dong†. <a class="paper-link" href="https://ieeexplore.ieee.org/document/11268347" target="_blank" rel="noopener noreferrer">SA-DEM: Dexterous Extrinsic Robotic Manipulation of Non-Graspable Objects via Stiffness-Aware Dual-Stage Reinforcement Learning</a>. IEEE Transactions on Automation Science and Engineering, 2025, Accepted.</li>   
+	<li>[4] Yanzhe Wang*, <strong>Hao Wu*</strong>, Ziyi Zheng, and Huixu Dong†. <a class="paper-link" href="https://www.roboticsproceedings.org/rss22/p177.html" target="_blank" rel="noopener noreferrer">Relaxation-Aware Multimodal Sensing of Soft Gripper Driven by Structure-Perception-Learning</a>. Robotics: Science and Systems, 2026, Oral, Accepted.</li>
+	<li>[5] Ziyi Zheng, Keqi Zhu, <strong>Hao Wu</strong>, Yanzhe Wang, and Huixu Dong†. <a class="paper-link" href="https://www.roboticsproceedings.org/rss22/p200.html" target="_blank" rel="noopener noreferrer">Active Surface-Driven Reconfigurable Gripper: Robust Grasping and Sequential Manipulation of Thin Objects</a>. Robotics: Science and Systems, 2026, Oral, Accepted.</li>   
+	<li>[6] Huang Junda, Honghao Guo, <strong>Hao Wu</strong>, Yitong Li, Zhengyang Liu, Marcelo H Ang Jr, Jianshu Zhou†. <a class="paper-link" href="https://arxiv.org/abs/2505.08213" target="_blank" rel="noopener noreferrer">HandCept: A Visual-Inertial Fusion Framework for Accurate Proprioception in Dexterous Hands</a>. ICCA, 2026, Oral, Accepted</li>
 	<li>[7] Shuhan Li*, Lei Li*, <strong>Hao Wu</strong>, Yu Feng, Wenjie Li, Wen Jung Li, Masayoshi Tomizuka, Jianshu Zhou†. Fast, sensitive, and interpretable tactile sensing by structural encoding and iontronic amplification. IEEE/ASME Transactions on Mechatronics, 2026, Under Review.</li>
-	<li>[8] <strong>Hao Wu*</strong>, Yanzhe Wang*, Yu Feng, Jian Liu, Jihao Li, Jianshu Zhou, and Huixu Dong†. DexLink Hand: A Compact, Affordable, 16-DOF Linkage-Driven Hand with Human-Like Dexterity. Robotics and Automation Letters, 2026, Under Review</li>
- 	<li>[9] <strong>Hao Wu*</strong>, Yanzhe Wang, Yu Feng, Yitong Li, Jingxiang Guo, Jian Liu, and Jianshu Zhou†. SyLink Hand: A Synergy-Inspired Linkage-Driven Anthropomorphic Hand for Human-Like Dexterity. ICRA, 2026, Under Review.</li>
+	<li>[8] <strong>Hao Wu*</strong>, Yanzhe Wang*, Yu Feng, Jian Liu, Jihao Li, Jianshu Zhou, and Huixu Dong†. <a class="paper-link" href="https://arxiv.org/abs/2606.17418" target="_blank" rel="noopener noreferrer">DexLink Hand: A Compact, Affordable, 16-DOF Linkage-Driven Hand with Human-Like Dexterity</a>. Robotics and Automation Letters, 2026, Under Review</li>
+ 	<li>[9] <strong>Hao Wu*</strong>, Yanzhe Wang, Yu Feng, Yitong Li, Jingxiang Guo, Jian Liu, and Jianshu Zhou†. <a class="paper-link" href="https://arxiv.org/abs/2606.14250" target="_blank" rel="noopener noreferrer">SyLink Hand: A Synergy-Inspired Linkage-Driven Anthropomorphic Hand for Human-Like Dexterity</a>. ICRA, 2026, Under Review.</li>
 	<li>[10] <strong>Hao Wu*</strong>, Haotian Guo*, Yu Feng, Yutong Wang, Yanzhe Wang, Jianshu Zhou†. SpectraTac: A Compact Camera-Free Optical Tactile Sensor with Distributed Color Sensing, IEEE-EPIC, 2026, Under Review.</li>
-	<li>[11] Yu Feng, <strong>Hao Wu</strong>, Yuzhe Wang, and Jianshu Zhou†. LARC: Lazy Adaptive Reachability Certification of Robot Manipulator Trajectories, EPIC, 2026, Under Review.</li>
+	<li>[11] Yu Feng, <strong>Hao Wu</strong>, Yuzhe Wang, and Jianshu Zhou†. <a class="paper-link" href="https://arxiv.org/abs/2608.29767" target="_blank" rel="noopener noreferrer">LARC: Lazy Adaptive Reachability Certification of Robot Manipulator Trajectories</a>, EPIC, 2026, Under Review.</li>
 	<li>[12] Yanzhe Wang*, Jianguo Wang*, <strong>Hao Wu*</strong>, Xidan Zhang, and Huixu Dong†. Tactile Geometry Meets Manipulation Geometry: Mechanism-Tactile Co-Design for Reconfigurable Three-Finger Gripper, Transactions on Robotics, 2026, Under Review.</li>
 	<li>[13] Jingxiang Guo, Haoyu Zhao, Xidong Zhang, Yuhang Zheng, <strong>Hao Wu</strong>, Chen Gao, Jianshu Zhou, Shuicheng YAN, Weihao Yuan. UMI-WM: Learning Interactive Worlds for Bimanual Manipulation from Wrist Cameras, ICLR, 2026, Under Review.</li>
 	<li>[14] Jingxiang Guo, Gujie Shao, Yuxin Hu, Bingsheng Xie, Jiaxin Shi, Chen Gao, Yuhang Zheng, <strong>Hao Wu</strong>, Haoyu Zhao, Jianshu Zhou, Weihao Yuan, Fei Wang, Shuicheng YAN. TacHarness: Agentic Infrastructure for Continually Improving Visuotactile Robot Policies, CoRL 2026 Workshop.</li>
@@ -813,6 +844,7 @@
     </tr>
   </tbody></table>
 -->
+  <div id="experience"></div>
   <!-- Experience -->
   <table width="100%" align="center" border="0" cellpadding="10"><tbody>
       <br>
@@ -881,6 +913,7 @@
 
   </tbody></table>
 
+  <div id="awards"></div>
   <!-- Selected Awards and Honors -->
   <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
@@ -1011,14 +1044,15 @@
       <!-- <br> -->
       <hr>
         <p style="text-align:center">
-          Last updated: August.1, 2025
+          Last updated: September 29, 2026
 
           <br>
-          © 2024 Hao Wu
+          © 2026 Hao Wu
         </p>
       </td>
       </tr>
   </tbody></table>
 
+\n<button id="backtop" aria-label="Back to top">↑</button>\n<script>\n(function(){\n  const b=document.getElementById('backtop');\n  window.addEventListener('scroll',()=>b.classList.toggle('show',window.scrollY>500),{passive:true});\n  b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));\n})();\n</script>\n
 </body>
 </html>
