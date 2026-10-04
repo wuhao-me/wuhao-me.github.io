@@ -20,6 +20,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          sparse-checkout: |
+            index.html
+            scripts
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

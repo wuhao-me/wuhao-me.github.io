@@ -54,7 +54,7 @@ def update(path, html, timestamp):
         f'<a href="{URL}" target="_blank" rel="noopener noreferrer">Google Scholar citations: '
         f'<strong>{count:,}</strong></a><br>Last successful refresh: '
         f'<time datetime="{timestamp}">{timestamp.replace("T", " ").replace("Z", " UTC")}</time>'
-        f' �� Refresh attempted daily; cached count.</p>\n'
+        f' &middot; Refresh attempted daily; Scholar may block updates.</p>\n'
         f'              <!-- scholar-stats:end -->')
     text, n = re.subn(r'<!-- scholar-stats:start -->.*?<!-- scholar-stats:end -->', replacement, text, flags=re.S)
     if n != 1:
